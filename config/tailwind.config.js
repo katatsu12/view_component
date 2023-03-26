@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-short': 'bounce 1s ease-in-out 5'
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },

@@ -1,0 +1,7 @@
+<%= turbo_stream.update 'new-user-form' do %>
+  <%= render NewUserFormComponent.new %>
+<% end %>
+
+<%= turbo_stream.append 'users' do %>
+  <%= render UserDetailsComponent.new(user: @user) %>
+<% end %>

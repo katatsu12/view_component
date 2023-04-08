@@ -1,9 +1,9 @@
 <div id='new-user-form'>
-  <%= render NewUserFormComponent.new %>
+  <%= render NewUserFormComponent.new %> # helper method user_component('new_form')
 </div>
 
 <div id="users" class="prose px-4 py-2">
   <h2>Users list</h2>
 
-  <%= render UserDetailsComponent.with_collection(@users) %>
+  <%= render UserDetailsComponent.with_collection(@users) %> # helper method user_component('user_details')
 </div>
